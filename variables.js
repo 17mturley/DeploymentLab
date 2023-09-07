@@ -29,4 +29,8 @@ if (faveNum === 13){
 /*
   Write a for loop that prints out your faveNum 5 times.
 */
+let array = [faveNum, faveNum, faveNum, faveNum, faveNum]
 
+ for (let i = 0; i < array.length; i++){
+  console.log(array[i])
+ }
