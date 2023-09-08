@@ -20,7 +20,8 @@ colorCopy.push('orange')
 */
 
 const numbers = [1, 2, 3, 4, 5]
-
+const middleNums = numbers.slice(1, numbers.length - 1)
+console.log(middleNums)
 //CODE HERE
 
 
@@ -36,4 +37,13 @@ const numbers = [1, 2, 3, 4, 5]
 
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
-// CODE HERE
+const answers = []
+for(let i = 0; i < bigOrSmallArray.length; i++){
+  if(bigOrSmallArray[i] < 100){
+    answers.push('small')
+    }else{
+      answers.push('big')
+    }console.log(answers)
+    
+    }
+
