@@ -59,6 +59,7 @@ for(let i = 0; i < galaAcres.length; i++){
 for(let i = 0; i < pinkAcres.length; i++){
     totalAcres += pinkAcres[i]
 }console.log(totalAcres)
+//I am using a for loop here to loop over each of the acre arrays to add all the variables together to get a total acres picked count.
 
 // PROBLEM 2
 
@@ -75,7 +76,7 @@ for(let i = 0; i < pinkAcres.length; i++){
 let numberOfdays = 7
 let averageDailyAcres = totalAcres / numberOfdays
 console.log(averageDailyAcres)
-
+//to get the average number of acres pick each day I have divided the total number of acres by the number of days in the week. 
 
 // PROBLEM 3
 
@@ -114,7 +115,7 @@ while(acresLeft > 0){
     acresLeft -= averageDailyAcres
 }
 console.log(days)
-
+//This while loop will continue to run until there are no acres left and will then add 1 to the days variable each time it loops, and also subtract from the acres left variable the average number of acres picked each day, calculated in the last question.
 
 
 // PROBLEM 4
@@ -157,6 +158,7 @@ let pinkTons = []
 for(let i = 0; i < pinkAcres.length; i++){
     pinkTons.push(pinkAcres[i] * 6.5)
 }console.log(pinkTons)
+// These three for loops will push each value of their corresponding array of acres multiplied by 6.5 to create a new array which will display how many tons have been picked each day.
 
 // PROBLEM 5
 
@@ -199,6 +201,8 @@ for(let i = 0; i < pinkTons.length; i++){
 let pinkPounds = pinkTonsTotal * 2000
 console.log(pinkPounds)
 
+//To convert the array we created in the last question to a total number of apples picked in tons I have looped over the array. I then multiplied that total by 2000 to convert it to pounds into the new variable. 
+
 // PROBLEM 6
 
 /*
@@ -226,6 +230,8 @@ console.log(galaProfit)
 let pinkProfit = pinkPrice * pinkPounds
 console.log(pinkProfit)
 
+//Here I have just multiplied the price per pound by the variable we created in the last question to get the profit of each apple orchard.
+
 // PROBLEM 7
 
 /*
@@ -238,3 +244,5 @@ console.log(pinkProfit)
 
 var totalProfit = pinkProfit += galaProfit += fujiProfit
 console.log(totalProfit)
+
+//To calculate the total profit I have just added all the profits together that we calculated in the last question. 
