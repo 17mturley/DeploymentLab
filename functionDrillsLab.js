@@ -11,10 +11,7 @@
   Call the function.
 */
 
-function helloworld(){
-  console.log('Hello, World!')
-}
-helloworld();
+//CODE HERE
 
 
 ////////////////// PROBLEM 2 ////////////////////
