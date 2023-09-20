@@ -101,14 +101,22 @@ Create a function called 'multiplyingFactory' that takes a number as a param. Th
 The inner function should run this logic: if the first number passing in is greater than and equal to 5, print the multiplication of the first and second numbers. If not, print "Cannot multiply: the first number is smaller than 5." 
 */
 
-// CODE HERE
+function multiplyingFactory(num1){
+    return function(num2){
+        if(num1 >= 5){
+            console.log(num1 * num2)
+        }else{
+            console.log('Cannot multiply: the first number is smaller than 5')
+        }
+    }
+}
 
 
 /* 
 Let's invoke the 'multiplyingFactory' function that will return another function, and save it into a variable called 'timesFour.' Let's pass in number 3 as a param.
 */
 
-// CODE HERE
+const timesFour = multiplyingFactory(5)
 
 
 /* 
@@ -119,7 +127,7 @@ Let's invoke 'timesFour' and pass in number 4 as a param. Number 4 here is the s
 Run the code in node to see the printed result. You should see "Cannot multiply: the first number is smaller than 5."
 */
 
-// INVOKE 'timesFour' HERE
+timesFour(4)
 
 
 /* 
